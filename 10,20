@@ -78,6 +78,7 @@ p.auther {
 
 nav, section.act {
     border-top: medium solid black;
+    margin: 1em;
 }
 
 a{

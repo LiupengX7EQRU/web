@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>William Shakespeare : The Tragedy of Hamlet, Prince of Denmark</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" type="text/css" href="hamlet2.css">
+    </head>
+    <body>
+        <header>
+            <p class="auther"> William Shakespeare</p>
+            <h1>The Tragedy of Hamlet, Prince of Denmark</h1>
+        </header>
+        <nav>
+            <h1>Contents</h1>
+            <ul>
+                <li>Act 1
+                    <ul>
+                        <li>
+                            <a href="#act1-scene5">Scene 5</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section class="act">
+            <h1>Act 1</h1>
+            <section class="scene" id="act1-scene5">
+                <h1>
+                    Scene 5 Another part of the platform
+                </h1>
+                <div class="speaker">Hamlet</div>
+                <div class="line">O all you host of heaven! O earth ! what else?</div>
+                <div class="line">And shall I couple hell? O, fie! Hold, hold, my heart;</div>
+                <div class="line">And you, my sinews, grow not instant old,</div>
+                <div class="line">But bear me stiffly up. Remember thee!</div>
+                <div class="line">Ay, thou poor ghost, while memory holds a seat</div>
+                <div>...</div>
+            </section>
+        </section>
+    </body>    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    border: thin solid black;
+    width: 50%;
+    margin: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+header, nav{
+    margin: 1em;
+    padding: 1em;
+}
+
+header{
+    font-variant: small-caps;
+    letter-spacing: 0,25em;
+}
+
+p.auther {
+    text-align: center;
+    font-size: x-large;
+}
+
+nav, section.act {
+    border-top: medium solid black;
+}
+
+a{
+    color: slateblue;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: slateblue;
+    color: white;
+}
+

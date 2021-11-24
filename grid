@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>CSS Grid Layout Homework</title>
+        <link rel ="stylesheet" href ="grid-homework.css">
+    </head>
+    <body>
+        <div id = "grid">
+            <div class = "pink"></div>    
+            <div class = "limegreen"></div>   
+            <div class = "lavender"></div>   
+            <div class = "gold"></div>   
+            <div class = "plum"></div>
+            <div class = "coral"></div>
+        </div>   
+    </body>
+</html>
+
+body{
+    margin: 0;
+}
+
+#grid > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid >div::before {
+    content: attr(class);
+
+}
+
+
+#grid {
+    display: grid;
+    grid-template-areas: "C C C D"
+                         "B B D A"
+                         "E E D A"
+                         "E B B A"
+                         "F B B D";
+    height: 100vh;
+
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 25% 25% 25% 25%;
+                        
+}
+
+/* #pink {
+    background-color: pink ;
+    grid-area: A;
+}
+
+#limegreen {
+    background-color:  limegreen;
+    grid-area: B;
+}
+
+#lavender {
+    background-color:  lavender;
+    grid-area: C;
+}
+
+#gold {
+    background-color:  gold;
+    grid-area: D;
+}
+
+#plum {
+    background-color:  plum;
+    grid-area: E;
+}
+
+#coral {
+    background-color:  coral;
+    grid-area: F;
+}
+ */
